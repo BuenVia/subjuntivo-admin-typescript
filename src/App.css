@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #31a0a0;
+}
+
+.new-blog__form {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new-blog__form input {
+  margin: 1em;
+  padding: 0.5em;
+  border: none;
+}
+.new-blog__form textarea {
+  width: 800px;
+  height: 500px;
+  padding: 1em;
+  border: 1px solid lightgray;
+  border-radius: 1em;
+  resize: none;
+  outline: none;
+}/*# sourceMappingURL=App.css.map */
