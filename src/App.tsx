@@ -3,13 +3,14 @@ import axios from 'axios'
 import './App.css';
 import { Blogs } from './models';
 import NewBlog from './components/NewBlog';
+import BlogCard from './components/BlogCard';
 
 
 const App: React.FC = () => {
   
   const URL = 'http://localhost:8080/api/subjuntivo/read'
   const [blogs, setBlogs] = useState<Blogs[]>([])
-  const [showForm, setShowForm] = useState(false)
+  const [showForm, setShowForm] = useState<boolean>(false)
 
   // Get the current blogs
   const getBlogs = async () => {
@@ -36,9 +37,7 @@ const App: React.FC = () => {
 
       {blogs.map(blog => {
         return (
-          <div key={blog._id}>
-            <p>{blog.title}</p>
-          </div>
+          <BlogCard key={blog._id} item={blog} />
         )
       })}
     </div>

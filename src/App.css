@@ -6,6 +6,12 @@ body {
   background-color: #31a0a0;
 }
 
+.form-container {
+  border: 1px solid whitesmoke;
+  border-radius: 1em;
+  max-width: 1200px;
+}
+
 .new-blog__form {
   padding: 1em;
   display: flex;
@@ -17,13 +23,36 @@ body {
   margin: 1em;
   padding: 0.5em;
   border: none;
+  border-radius: 0.5em;
+  outline: none;
 }
 .new-blog__form textarea {
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 800px;
   padding: 1em;
   border: 1px solid lightgray;
   border-radius: 1em;
   resize: none;
   outline: none;
+}
+.new-blog__form button {
+  margin-top: 1em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.new-blog__form button:hover {
+  transition: 150ms;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.edit-btn {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  transition: 150ms;
+  color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=App.css.map */
