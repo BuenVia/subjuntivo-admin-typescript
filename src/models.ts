@@ -4,6 +4,7 @@ export interface Blogs {
     auth: string,
     createdAt: string,
     sanitizedHtml: string
+    markdown: string
 }
 
 export interface BlogPosts {

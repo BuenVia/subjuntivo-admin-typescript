@@ -29,17 +29,19 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <h1>Subjuntivo Admin</h1>
+      <div className="container">
+        <h1>Subjuntivo Admin</h1>
 
-      {showForm && <NewBlog />}
+        {showForm && <NewBlog />}
 
-      <button onClick={() => {setShowForm(value => !value)}}>{showForm ? "Close" : "New"}</button>
+        <button className='new-btn' onClick={() => {setShowForm(value => !value)}}>{showForm ? "Close" : "New"}</button>
 
-      {blogs.map(blog => {
-        return (
-          <BlogCard key={blog._id} item={blog} />
-        )
-      })}
+        {blogs.map(blog => {
+          return (
+            <BlogCard key={blog._id} item={blog} />
+          )
+        })}
+      </div>
     </div>
   );
 }

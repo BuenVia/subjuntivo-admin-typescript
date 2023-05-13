@@ -1,9 +1,32 @@
-.App {
-  text-align: center;
+body {
+  background-color: #151717;
+  color: whitesmoke;
 }
 
-body {
-  background-color: #31a0a0;
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+}
+
+.blog-card {
+  padding: 1em;
+  border-bottom: 1px solid lightgray ;
+}
+
+.new-btn {
+  padding: .5em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.new-btn:hover {
+  background-color: rgba(241, 241, 241, 0.7);
 }
 
 .form-container {
@@ -54,5 +77,19 @@ body {
 }
 .edit-btn:hover {
   transition: 150ms;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(241, 241, 241, 0.7);
+}
+
+.delete-btn {
+  margin-top: 1em;
+  padding: .5em;
+  background-color: #990000;
+  color: white;
+  border: none;
+  border-radius: .5em;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  transition: 150ms;
+  background-color: rgba(0, 0, 0, 0.1);
 }
